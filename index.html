@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaca Şahzadələrin Bayramı - Elmir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+        .invitation-card {
+            width: 100%;
+            max-width: 480px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .header-section {
+            background: linear-gradient(135deg, #e8f0fe 0%, #fce8e6 100%);
+            padding: 30px 20px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .crown-icon {
+            font-size: 45px;
+            margin-bottom: 5px;
+        }
+        .invitation-subtitle {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .description {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+        .section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: #888;
+            text-transform: uppercase;
+            margin: 20px 0 10px;
+            text-align: center;
+        }
+        .profiles-container {
+            display: flex;
+            justify-content: center;
+            padding: 0 20px 20px;
+        }
+        .profile-card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 15px;
+            width: 100%;
+            max-width: 280px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        .profile-img-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 12px;
+            border: 3px solid #d4af37;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #555;
+            font-weight: 500;
+        }
+        .event-details {
+            background: #fafbfc;
+            padding: 25px 20px;
+            border-top: 1px solid #eee;
+        }
+        .detail-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background: #fff;
+            padding: 12px 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .detail-icon {
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        .detail-title {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .detail-value {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .map-btn {
+            display: block;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+            transition: background 0.3s;
+        }
+        .map-btn:hover {
+            background: #1a252f;
+        }
+        .footer-note {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #888;
+            background: #fafbfc;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <div class="header-section">
+            <div class="crown-icon">👑</div>
+            <div class="invitation-subtitle">Elçin ailəsi dəvət edir</div>
+            <h1 class="main-title">Balaca şahzadənin bayramı</h1>
+            <p class="description">Övladımızın sünnət toyu və ilk ad günü bir məclisdə. Bu sevinci sizinlə bölüşmək istəyirik.</p>
+        </div>
+
+        <div class="section-heading">Bizim Şahzadə</div>
+        
+        <div class="profiles-container">
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="elmir1.jpg" alt="Elmir" onerror="this.src='https://images.unsplash.com/photo-1519689680058-324335c77eba?w=300'">
+                </div>
+                <div class="profile-name">Elmir</div>
+                <div class="badge-container">
+                    <span class="badge">Sünnət toyu</span>
+                    <span class="badge">1 yaş</span>
+                    <span class="badge">Balaca igid</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-details">
+            <div class="detail-row">
+                <div class="detail-icon">📅</div>
+                <div>
+                    <div class="detail-title">Tarix və Saat</div>
+                    <div class="detail-value">20 Dekabr 2026, saat 18:00</div>
+                </div>
+            </div>
+
+            <div class="detail-row">
+                <div class="detail-icon">🏛️</div>
+                <div>
+                    <div class="detail-title">Məkan</div>
+                    <div class="detail-value">Şəms Şadlıq Sarayı (Kiçik zal)</div>
+                </div>
+            </div>
+
+            <a href="https://maps.app.goo.gl/YVw8Mzb5uUzgGKpF8" target="_blank" class="map-btn">
+                📍 Xəritədə Bax (Google Maps)
+            </a>
+        </div>
+
+        <div class="footer-note">
+            Sizi aramızda görməkdən məmnun olarıq!
+        </div>
+    </div>
+
+</body>
+</html>
