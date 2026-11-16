@@ -106,30 +106,48 @@
             text-align: center;
             border: 1px solid #f1f5f9;
         }
-        /* Bir neçə şəkil üçün qalereya üslubu */
+        
+        /* Şəkilləri sağa-sola sürüşdürmək üçün səliqəli qalereya */
         .photo-gallery {
             display: flex;
-            gap: 10px;
+            gap: 15px;
             overflow-x: auto;
-            padding-bottom: 10px;
+            padding: 10px 5px 15px 5px;
             margin-bottom: 15px;
-            scrollbar-width: thin;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
         }
+        .photo-gallery::-webkit-scrollbar {
+            height: 6px;
+        }
+        .photo-gallery::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+        .photo-gallery::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        
         .profile-img-container {
-            min-width: 130px;
-            height: 130px;
+            min-width: 140px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             overflow: hidden;
-            margin: 0 auto;
             border: 3px solid #d4af37;
             box-shadow: 0 4px 12px rgba(0,0,0,0.12);
             flex-shrink: 0;
+            background: #f8fafc;
+            scroll-snap-align: center;
         }
         .profile-img-container img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Şəkil heç vaxt bürüşmür, tam səliqəli oturur */
+            object-position: center;
         }
+        
         .profile-name {
             font-family: 'Playfair Display', serif;
             font-size: 24px;
@@ -221,23 +239,23 @@
             <div class="crown-icon">👑</div>
             <div class="invitation-subtitle">Elçin ailəsi dəvət edir</div>
             <h1 class="main-title">Balaca şahzadənin bayramı</h1>
-            <p class="description">Övladımızın Ilk ad günü və kiçik toy məclisdə. Bu sevinci sizinlə bölüşmək istəyirik.</p>
+            <p class="description">Övladımızın ilk ad günü və kiçik toy məclisi. Bu sevinci sizinlə bölüşmək istəyirik.</p>
         </div>
 
-        <div class="section-heading">Elmir Əlizadə</div>
+        <div class="section-heading">Bizim Şahzadə</div>
         
         <div class="profiles-container">
             <div class="profile-card">
-                <!-- Bir neçə şəkli yanaşı göstərən qalereya hissəsi -->
+                <!-- Sağa-sola sürüşdürülən şəkil qalereyası -->
                 <div class="photo-gallery">
                     <div class="profile-img-container">
-                        <img src="elmir1.jpg" alt="Elmir" onerror="this.src='https://images.unsplash.com/photo-1519689680058-324335c77eba?w=300'">
+                        <img src="elmir1.jpg" alt="Elmir" onerror="this.src='elmir1.jpeg'">
                     </div>
                     <div class="profile-img-container">
-                        <img src="elmir2.jpg" alt="Elmir" onerror="this.src='https://images.unsplash.com/photo-1543332164-6e82f355badc?w=300'">
+                        <img src="elmir2.jpg" alt="Elmir" onerror="this.src='elmir2.jpeg'">
                     </div>
                     <div class="profile-img-container">
-                        <img src="elmir3.jpg" alt="Elmir" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300'">
+                        <img src="elmir3.jpg" alt="Elmir" onerror="this.src='elmir3.jpeg'">
                     </div>
                 </div>
                 <div class="profile-name">Elmir</div>
@@ -261,7 +279,7 @@
                 <div class="detail-icon">🏛️</div>
                 <div>
                     <div class="detail-title">Məkan</div>
-                    <div class="detail-value" id="location-name">Şəms Şadlıq Sarayı (Zal: Emerald Hall)</div>
+                    <div class="detail-value">Şəms Şadlıq Sarayı (Zal: Emerald Hall)</div>
                 </div>
             </div>
 
